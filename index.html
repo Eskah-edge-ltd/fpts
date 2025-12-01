@@ -183,30 +183,58 @@
   </div>
 
   <!-- Mobile Menu (initially hidden) -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white/95">
-    <div class="px-4 pt-3 pb-4 space-y-1 sm:px-6">
-      <a href="#mission" class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">Our Mission</a>
-      <a href="#initiatives" class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">Initiatives</a>
-      <a href="get-involved" class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">Get Involved</a>
-      <a href="#contacts" class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">Contacts</a>
+<div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 bg-white/95">
+  <div class="px-4 pt-3 pb-4 space-y-1 sm:px-6">
+    
+    <a href="#mission" 
+       class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">
+       Our Mission
+    </a>
 
-      <div class="mt-3">
-        <a href="get-involved" class="block w-full text-center px-3 py-2 bg-secondary text-white font-bold rounded-md hover:bg-red-700">Take Action</a>
-      </div>
+    <a href="#initiatives" 
+       class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">
+       Initiatives
+    </a>
 
-      <!-- Optional small contact row in mobile menu -->
-      <div class="mt-4 pt-3 border-t border-gray-200">
-        <a href="mailto:info@fpts.co.ke" class="flex items-center text-sm text-gray-600 hover:text-primary gap-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
-          info@fpts.co.ke
-        </a>
-        <a href="tel:+254790350991" class="flex items-center text-sm text-gray-600 hover:text-primary gap-2 mt-2">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
-          (+254) 790-350-991
-        </a>
-      </div>
+    <a href="#get-involved" 
+       class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">
+       Get Involved
+    </a>
+
+    <a href="#contacts" 
+       class="block text-gray-700 hover:bg-gray-100 hover:text-primary rounded-md px-3 py-2 text-base font-medium">
+       Contacts
+    </a>
+
+    <div class="mt-3">
+      <a href="#get-involved" 
+         class="block w-full text-center px-3 py-2 bg-secondary text-white font-bold rounded-md hover:bg-red-700">
+         Take Action
+      </a>
     </div>
   </div>
+
+  <!-- Contact row -->
+  <div class="mt-4 pt-3 border-t border-gray-200">
+    <a href="mailto:info@fpts.co.ke" class="flex items-center text-sm text-gray-600 hover:text-primary gap-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+      </svg>
+      info@fpts.co.ke
+    </a>
+
+    <a href="tel:+254790350991" class="flex items-center text-sm text-gray-600 hover:text-primary gap-2 mt-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+      </svg>
+      (+254) 790-350-991
+    </a>
+  </div>
+</div>
+
+
+
 </nav>
 
 <script>
@@ -990,12 +1018,12 @@
 </script>
 
 <!-- NEWS- news -->
-<!-- News & Updates -->
-<section id="news-events" class="bg-gradient-to-b from-white via-[#FFECEC] to-[#FFF5F5] py-24">
-  <div class="max-w-7xl mx-auto px-6">
-    
+<!-- ==================== Modern Scrollable News & Updates ==================== --> <hr>
+<section id="#get-involved" class="bg-gradient-to-b from-white via-[#FFECEC] to-[#FFF5F5] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+
     <!-- Header -->
-    <div class="text-center mb-16">
+    <div class="text-center mb-8">
       <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">News & Updates</h2>
       <p class="text-lg text-gray-700 max-w-3xl mx-auto">
         Stay informed with FPTS advocacy wins, policy changes, industry developments, and media coverage.
@@ -1011,50 +1039,64 @@
       <button class="flex-shrink-0 px-4 py-2 bg-gray-200 text-gray-800 rounded-full hover:bg-primary/20 transition">Events</button>
     </div>
 
-    <!-- Accordion Cards -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Example Card -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
-        <img src="/Assets/chair-explain.jpeg" alt="Inspector General Visit" class="w-full h-48 object-cover">
+    <!-- Modern Scrollable Cards -->
+    <div class="flex gap-8 overflow-x-auto snap-x snap-mandatory pb-4 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:overflow-visible scrollbar-hide">
+
+      <!-- CARD TEMPLATE -->
+             <div class="min-w-[85%] sm:min-w-[60%] md:min-w-0 snap-start bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
+        <img src="/Assets/kushianpanel.jpeg" class="w-full h-48 object-cover" />
+        <div class="p-6 flex flex-col">
+          <h3 class="text-2xl font-semibold mb-2 group-hover:text-primary transition">FPTS Participates in the Kenya Public Transport Summit 2025</h3>
+          <p class="text-gray-700 mb-2 text-sm">November 27, 2025 | Nairobi, Kenya</p>
+          <p class="text-gray-700 mb-4 line-clamp-3">
+            FPTS took part in the Kenya Public Transport Summit 2025 where policymakers, operators and mobility experts explored reforms, safety enhancement and digitisation...
+          </p>
+          <button class="text-primary font-bold hover:underline mt-auto">Read More →</button>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+       <div class="min-w-[85%] sm:min-w-[60%] md:min-w-0 snap-start bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
+        <img src="/Assets/namata Wagner.jpeg" class="w-full h-48 object-cover" />
+        <div class="p-6 flex flex-col">
+          <h3 class="text-2xl font-semibold mb-2 group-hover:text-primary transition">NaMATA Hosts Stakeholder Workshop for BRT Line 4 East</h3>
+          <p class="text-gray-700 mb-2 text-sm">October 29–30, 2025 | Elysian Resort, Nairobi</p>
+          <p class="text-gray-700 mb-4 line-clamp-3">
+            NaMATA conducted a workshop on the conceptual design for BRT Line 4 East as part of Nairobi Urban Mobility Improvement...
+          </p>
+          <button class="text-primary font-bold hover:underline mt-auto">Read More →</button>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+            <div class="min-w-[85%] sm:min-w-[60%] md:min-w-0 snap-start bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
+        <img src="/Assets/chair-explain.jpeg" class="w-full h-48 object-cover" />
         <div class="p-6 flex flex-col">
           <h3 class="text-2xl font-semibold mb-2 group-hover:text-primary transition">Office of Inspector General, Douglas Kanja, Engages FPTS on Road Safety</h3>
           <p class="text-gray-700 mb-2 text-sm">July 3, 2025 | Jogoo House, 4th Floor, Nairobi</p>
-          <p class="text-gray-700 mb-4 line-clamp-3" id="content-1">
-            The Office of the Inspector General, led by Douglas Kanja, met with FPTS to discuss key issues affecting road safety and police conduct in the PSV sector. The discussion emphasized adherence to traffic regulations, fair enforcement, curbing indiscipline, and enhancing collaboration between law enforcement and PSV operators for safer public transport across Kenya.
+          <p class="text-gray-700 mb-4 line-clamp-3">
+            The Office of the Inspector General, led by Douglas Kanja, met with FPTS to discuss key issues affecting road safety and police conduct in the PSV sector...
           </p>
-          <button class="text-primary font-bold hover:underline mt-auto read-more-btn" data-target="content-1">Read More →</button>
+          <button class="text-primary font-bold hover:underline mt-auto">Read More →</button>
         </div>
       </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
-        <img src="/Assets/Bunge.jpeg" alt="Transport Committee Meeting" class="w-full h-48 object-cover">
+  
+      <!-- CARD 4 — SUMMIT -->
+      <div class="min-w-[85%] sm:min-w-[60%] md:min-w-0 snap-start bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
+        <img src="/Assets/Bunge.jpeg" class="w-full h-48 object-cover" />
         <div class="p-6 flex flex-col">
           <h3 class="text-2xl font-semibold mb-2 group-hover:text-primary transition">Transport Committee Engages FPTS to Chart New Path for Kenya's PSV Industry</h3>
           <p class="text-gray-700 mb-2 text-sm">April 24, 2025 | Bunge Tower, Nairobi</p>
-          <p class="text-gray-700 mb-4 line-clamp-3" id="content-2">
-            The Departmental Committee on Transport held a consultative engagement with FPTS to deliberate on challenges facing public service vehicle operators. Key issues included gaps in legislation, taxation concerns, dysfunctional vehicle insurance systems, lack of training institutions, and poor infrastructure. FPTS proposed a National Road and Transport Master Plan to streamline investment, reduce operational costs, and improve overall efficiency across transport modes.
+          <p class="text-gray-700 mb-4 line-clamp-3">
+            The Departmental Committee on Transport held a consultative engagement with FPTS to deliberate on challenges facing public service vehicle operators...
           </p>
-          <button class="text-primary font-bold hover:underline mt-auto read-more-btn" data-target="content-2">Read More →</button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-3xl shadow-lg overflow-hidden group transition-all duration-300">
-        <img src="/Assets/namata Wagner.jpeg" alt="BRT Line 4 East Workshop" class="w-full h-48 object-cover">
-        <div class="p-6 flex flex-col">
-          <h3 class="text-2xl font-semibold mb-2 group-hover:text-primary transition">NaMATA Hosts Stakeholder Workshop for BRT Line 4 East</h3>
-          <p class="text-gray-700 mb-2 text-sm">October 29-30, 2025 | Elysian Resort, Nairobi</p>
-          <p class="text-gray-700 mb-4 line-clamp-3" id="content-3">
-            NaMATA conducted a workshop on the conceptual design for BRT Line 4 East as part of the Nairobi Urban Mobility Improvement Project. Stakeholders including FPTS, SDoT, county governments, KURA, KeNHA, NTSA, KRC, and KEPSA discussed the updated design, urban mobility, and interconnectivity of public transport systems, aiming to enhance efficiency and institutional capacity.
-          </p>
-          <button class="text-primary font-bold hover:underline mt-auto read-more-btn" data-target="content-3">Read More →</button>
+          <button class="text-primary font-bold hover:underline mt-auto">Read More →</button>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
+
 
 <script>
   // Accordion Read More functionality
