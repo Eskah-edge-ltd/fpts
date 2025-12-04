@@ -55,12 +55,38 @@
 <link rel="canonical" href="https://fpts.co.ke/">
 <meta name="theme-color" content="#1D4ED8">
 <!-- Favicon -->
-<!-- Standard favicons -->
+<!-- FPTS Favicons + Organization Schema (for Google logo) -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
-
-<!-- Apple/iOS -->
+<link rel="icon" type="image/png" sizes="192x192" href="/Assets/android-chrome-192x192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#003087">
+<meta name="theme-color" content="#003087">
+
+<!-- This tells Google: "This is our official logo" -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Federation of Public Transport Sector (FPTS)",
+  "alternateName": "FPTS Kenya",
+  "url": "https://www.fpts.co.ke/",
+  "logo": "https://www.fpts.co.ke/Assets/fpts-full-logo.png",
+  "description": "The officially recognised national umbrella body uniting all major public transport associations in Kenya.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Utali St, View Park Towers",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+254700350991",
+    "contactType": "Customer Service"
+  }
+}
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   <title>FPTS - Federation of Public Transport</title>
