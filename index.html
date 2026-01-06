@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags (Optimized for Matatu/Public Transport Searches) -->
+  <title>FPTS Kenya - Federation of Public Transport Sector | Matatu Associations & PSV Operators</title>
+  <meta name="title" content="FPTS Kenya - Federation of Public Transport Sector | Matatu Associations & PSV Operators">
+  <meta name="description" content="FPTS is Kenya’s national umbrella body uniting matatu associations, bus operators, and the public transport sector. We advocate for road safety, professionalism, policy reform, and sustainable mobility.">
+  <meta name="keywords" content="FPTS Kenya, Federation of Public Transport Sector, matatu associations Kenya, public transport Kenya, PSV operators, matatu owners association, road safety Kenya, transport policy Kenya, BRT Kenya, green mobility, e-mobility, NTSA, NaMATA">
+  <meta name="author" content="Federation of Public Transport Sector (FPTS)">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://fpts.co.ke/">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fpts.co.ke/">
+  <meta property="og:title" content="FPTS Kenya - Federation of Public Transport Sector | Matatu Associations & PSV Operators">
+  <meta property="og:description" content="FPTS unites matatu associations, bus operators, and public transport stakeholders in Kenya to promote safety, professionalism, and sustainable mobility solutions.">
+  <meta property="og:image" content="https://fpts.co.ke/Assets/og-preview.png?v=1">
+  <meta property="og:image:alt" content="FPTS Kenya Logo - Federation of Public Transport Sector representing matatu and PSV operators">
+  <meta property="og:site_name" content="FPTS Kenya">
+  <meta property="og:locale" content="en_KE">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://fpts.co.ke/">
+  <meta name="twitter:title" content="FPTS Kenya - Federation of Public Transport Sector | Matatu Associations & PSV Operators">
+  <meta name="twitter:description" content="FPTS unites matatu associations, bus operators, and public transport stakeholders in Kenya to promote safety, professionalism, and sustainable mobility solutions.">
+  <meta name="twitter:image" content="https://fpts.co.ke/Assets/og-preview.png?v=1">
+  <meta name="twitter:image:alt" content="FPTS Kenya Logo - Federation of Public Transport Sector representing matatu and PSV operators">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#003087">
+  <meta name="msapplication-TileColor" content="#003087">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/Assets/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
+
+  <!-- Structured Data (JSON-LD) - Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Federation of Public Transport Sector (FPTS)",
+    "alternateName": "FPTS Kenya",
+    "url": "https://fpts.co.ke/",
+    "logo": "https://fpts.co.ke/Assets/og-preview.png?v=1",
+    "description": "Kenya’s national umbrella body uniting matatu associations, bus operators, and public transport stakeholders — advocating road safety, professionalism, policy reform, and sustainable mobility.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Utali St, View Park Towers",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+254700350991",
+      "contactType": "Customer Service",
+      "email": "info@fpts.co.ke"
+    },
+    "sameAs": [
+      "https://www.facebook.com/FederationOfPublicTransportSector",
+      "https://x.com/FederationofPT",
+      "https://www.linkedin.com/company/federation-of-public-transport-sector",
+      "https://www.tiktok.com/@federationofpublictransp"
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#1D4ED8',
+            'secondary': '#FC2D05',
+            'background-light': '#ffffff',
+            'text-dark': '#1f2937',
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="text-text-dark antialiased min-h-screen">
+
+  <!-- Redesigned Top Bar - Hidden on small screens, visible on md+ -->
+  <div class="hidden md:block bg-primary/95 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-6 text-sm">
+      <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+        <a href="mailto:info@fpts.co.ke" class="hover:text-secondary transition duration-150">
+          <b>info@fpts.co.ke</b>
+        </a>
+        <a href="tel:+254790350991" class="hover:text-secondary transition duration-150">
+          <b>(+254) 790-350-991</b>
+        </a>
+      </div>
+      <div class="flex items-center space-x-3">
+        <!-- Social Icons (same as original) -->
+        <a href="https://x.com/FederationofPT?t=_XpMBW929hl_Fl67yYthDg&s=09" target="_blank" class="group w-7 h-7 bg-white/20 backdrop-blur-md rounded-md flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:scale-110">
+          <svg class="w-4 h-4 text-white group-hover:text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/share/15MLCSAGaRe/" target="_blank" class="group w-7 h-7 bg-white/20 backdrop-blur-md rounded-md flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:scale-110">
+          <svg class="w-4 h-4 text-white group-hover:text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/federation-of-public-transport-b97986397/" target="_blank" class="group w-7 h-7 bg-white/20 backdrop-blur-md rounded-md flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:scale-110">
+          <svg class="w-4 h-4 text-white group-hover:text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@federationofpublictransp?_r=1&_t=ZM-91XyoKDGv3U" target="_blank" class="group w-7 h-7 bg-white/20 backdrop-blur-md rounded-md flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-white group-hover:text-primary" viewBox="0 0 16 16">
+            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Redesigned Navbar - Cleaner layout, improved hover effects, consistent padding -->
+  <nav class="bg-background-light/90 backdrop-blur-lg shadow-md sticky top-0 z-50 border-b border-gray-100" x-data="{ mobileOpen: false }">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <!-- Logo - Adjusted responsive heights to prevent overspreading on small screens, added max-w to constrain width -->
+        <a href="/" class="flex items-center flex-shrink-0">
+          <img 
+            src="/Assets/AiFPTSlogo-removebg-preview.png"
+            onerror="this.onerror=null;this.src='https://placehold.co/300x100/1D4ED8/ffffff?text=FPTS';"
+            alt="FPTS Logo"
+            class="h-16 sm:h-16 md:h-16 lg:h-20 xl:h-24 w-auto max-w-[calc(100vw-4rem)] object-contain drop-shadow-lg transition-transform hover:scale-105 duration-300"
+          />
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+          <a href="/" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg relative group">
+            Home
+            <span class="absolute inset-x-0 bottom-[-4px] h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+          </a>
+          <a href="/about.html" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg relative group">
+            About Us
+            <span class="absolute inset-x-0 bottom-[-4px] h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+          </a>
+
+          <!-- What We Do Dropdown -->
+          <div class="relative" x-data="{ open: false }">
+            <button @click="open = !open" @mouseenter="open = true" @mouseleave="open = false" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg flex items-center">
+              What We Do
+              <svg class="ml-1 w-4 h-4 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <div x-show="open" x-transition.origin.top @mouseenter="open = true" @mouseleave="open = false" class="absolute left-[-20px] mt-4 w-80 bg-white rounded-xl shadow-xl py-4 z-50 border border-gray-100 overflow-hidden">
+              <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-secondary/10 to-transparent"></div>
+              <a href="/what-we-do/#advocacy-policy" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Advocacy & Policy</a>
+              <a href="/what-we-do/#safety-capacity" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Safety & Capacity Building</a>
+              <a href="/what-we-do/#passenger-innovation" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Passenger Engagement & Innovation</a>
+            </div>
+          </div>
+
+          <!-- Membership Dropdown -->
+          <div class="relative" x-data="{ open: false }">
+            <button @click="open = !open" @mouseenter="open = true" @mouseleave="open = false" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg flex items-center">
+              Membership
+              <svg class="ml-1 w-4 h-4 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <div x-show="open" x-transition.origin.top @mouseenter="open = true" @mouseleave="open = false" class="absolute left-[-20px] mt-4 w-96 bg-white rounded-xl shadow-xl py-4 z-50 border border-gray-100 overflow-hidden">
+              <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-secondary/10 to-transparent"></div>
+              <a href="/membership/#membership-overview" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Membership Overview</a>
+              <a href="/membership/#full-membership" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Public Transport Associations</a>
+              <a href="/membership/#corporate-affiliate-membership" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Corporate & Affiliate Partners</a>
+              <a href="/membership/#development-partners-recognition" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Development Partners & Honorary Recognition</a>
+              <a href="/membership/#federation-membership" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition ">Our Members & Leadership</a>
+            </div>
+          </div>
+
+          <!-- Media Dropdown -->
+          <div class="relative" x-data="{ open: false }">
+            <button @click="open = !open" @mouseenter="open = true" @mouseleave="open = false" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg flex items-center">
+              Media
+              <svg class="ml-1 w-4 h-4 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <div x-show="open" x-transition.origin.top @mouseenter="open = true" @mouseleave="open = false" class="absolute left-[-20px] mt-4 w-80 bg-white rounded-xl shadow-xl py-4 z-50 border border-gray-100 overflow-hidden">
+              <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-secondary/10 to-transparent"></div>
+              <a href="/media/#news-updates" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">News & Updates</a>
+              <a href="/media/#events" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Events</a>
+              <a href="/media/#gallery" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Photo Gallery</a>
+              <a href="/media/#downloads" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Downloads</a>
+              <a href="/media/#adverts" class="block px-6 py-3 text-gray-700 hover:bg-primary/5 hover:text-primary transition">Adverts</a>
+            </div>
+          </div>
+
+          <a href="/contact/" class="text-gray-600 hover:text-primary font-medium text-base lg:text-lg relative group">
+            Contact Us
+            <span class="absolute inset-x-0 bottom-[-4px] h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+          </a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:block">
+          <a href="/contact/" class="px-6 py-3 bg-gradient-to-r from-secondary/90 to-red-600 text-white font-bold text-base rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition duration-300 flex items-center justify-center relative overflow-hidden">
+            Join Now
+            <span class="absolute inset-0 bg-white/20 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button @click="mobileOpen = !mobileOpen" class="md:hidden p-2 text-gray-600 hover:text-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50">
+          <svg x-show="!mobileOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg x-show="mobileOpen" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div x-show="mobileOpen" x-transition.origin.top @click.outside="mobileOpen = false" class="md:hidden bg-white shadow-lg border-t border-gray-100">
+      <div class="px-4 py-6 space-y-2">
+        <a href="/" @click="mobileOpen = false" class="block py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary rounded-md">Home</a>
+        <a href="/about.html" @click="mobileOpen = false" class="block py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary rounded-md">About Us</a>
+
+        <!-- Mobile What We Do Dropdown -->
+        <div x-data="{ open: false }">
+          <button @click="open = !open" class="w-full text-left py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary flex justify-between items-center rounded-md">
+            What We Do
+            <svg class="w-5 h-5 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+          <div x-show="open" x-collapse.duration.300ms class="pl-6 space-y-1 mt-2 mb-4">
+            <a href="/what-we-do/#advocacy-policy" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Advocacy & Policy</a>
+            <a href="/what-we-do/#safety-capacity" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Safety & Capacity Building</a>
+            <a href="/what-we-do/#passenger-innovation" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Passenger Engagement & Innovation</a>
+          </div>
+        </div>
+
+        <!-- Mobile Membership Dropdown -->
+        <div x-data="{ open: false }">
+          <button @click="open = !open" class="w-full text-left py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary flex justify-between items-center rounded-md">
+            Membership
+            <svg class="w-5 h-5 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+          <div x-show="open" x-collapse.duration.300ms class="pl-6 space-y-1 mt-2 mb-4">
+            <a href="/membership/#membership-overview" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Membership Overview</a>
+            <a href="/membership/#full-membership" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Public Transport Associations</a>
+            <a href="/membership/#corporate-affiliate-membership" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Corporate & Affiliate Partners</a>
+            <a href="/membership/#development-partners-recognition" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Development Partners & Honorary Recognition</a>
+            <a href="/membership/#federation-membership" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary ">Our Members & Leadership</a>
+          </div>
+        </div>
+
+        <!-- Mobile Media Dropdown -->
+        <div x-data="{ open: false }">
+          <button @click="open = !open" class="w-full text-left py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary flex justify-between items-center rounded-md">
+            Media
+            <svg class="w-5 h-5 transition-transform duration-200" :class="{'rotate-180': open}" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+            </svg>
+          </button>
+          <div x-show="open" x-collapse.duration.300ms class="pl-6 space-y-1 mt-2 mb-4">
+            <a href="/media/#news-updates" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">News & Updates</a>
+            <a href="/media/#events" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Events</a>
+            <a href="/media/#gallery" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Photo Gallery</a>
+            <a href="/media/#downloads" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Downloads</a>
+            <a href="/media/#adverts" @click="mobileOpen = false" class="block py-2 text-gray-600 hover:text-primary">Adverts</a>
+          </div>
+        </div>
+
+        <a href="/contact/" @click="mobileOpen = false" class="block py-3 px-4 text-gray-600 font-medium hover:bg-gray-50 hover:text-primary rounded-md">Contact Us</a>
+
+        <a href="/contact/" @click="mobileOpen = false" class="block mt-6 text-center py-4 bg-gradient-to-r from-secondary/90 to-red-600 text-white font-bold rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          Join Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+       
+
+
+  <!-- Your main content goes here (Hero, features, etc.) -->
+<!-- logo addition section 1 -->
+<section id="home" class="relative bg-gradient-to-b from-white via-primary/20 to-secondary/20 py-16 lg:py-10">
+  <!-- Background accents -->
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-secondary/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- COMPACT RECTANGLE: Logo + Bus + Tagline -->
+<div class="w-full rounded-3xl shadow-2xl border border-gray-100 p-6 
+            flex flex-col md:flex-row items-center justify-between gap-6 
+            bg-gradient-to-r from-primary/20 via-white to-secondary/20">
+
+      <!-- LEFT: Logo -->
+      <div class="inline-block p-2 bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl shadow-xl flex-shrink-0">
+        <div class="bg-white rounded-3xl p-6 shadow-inner border border-gray-100">
+          <img src="/Assets/AiFPTSlogo-removebg-preview.png"
+               alt="FPTS Kenya Official Logo"
+               class="w-48 sm:w-56 md:w-64 mx-auto" />
+        </div>
+      </div>
+
+      <!-- CENTER: Bus -->
+      <div class="flex-1 mx-2">
+        <img src="/Assets/fptsbus.jpg"
+             alt="Public Transport Vehicle"
+             class="w-full max-w-lg mx-auto drop-shadow-2xl" />
+      </div>
+
+      <!-- RIGHT: Tagline/Text -->
+      <div class="flex-shrink-0 text-center md:text-left space-y-2">
+        <div class="inline-block bg-gradient-to-r from-primary to-primary/90 text-white px-6 py-3 rounded-2xl shadow-lg border border-white/30 text-sm sm:text-base md:text-base font-black leading-tight">
+          ONE VOICE.<span class="text-white/95">ONE ROUTE.</span>
+          <span class="text-secondary drop-shadow-md">ONE FUTURE.</span>
+        </div>
+        <p class="text-xl md:text-2xl font-bold text-primary mt-1">FPTS Kenya</p>
+        <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-secondary rounded-full mx-auto md:mx-0"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT SNAPSHOT – CENTERED BRIGHT VERSION ================= -->
+<section class="relative py-24 overflow-hidden"
+         style="background: linear-gradient(135deg, #FFFFFF 100%, #60A5FA 50%, #FC2D05 20%);">
+
+  <!-- Decorative Accents -->
+  <div class="absolute top-0 right-0 w-72 h-72 bg-[#FC2D05]/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-[#1D4ED8]/10 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+
+    <!-- Left Content -->
+    <div class="text-center md:text-left md:flex-1">
+      <span class="inline-block mb-4 px-4 py-1 text-sm font-semibold rounded-full bg-[#1D4ED8]/20 text-[#1D4ED8] tracking-wide">
+        Who We Are
+      </span>
+
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
+        Shaping the Future of  
+        <span class="text-[#FC2D05]">Public Transport</span> in Kenya
+      </h2>
+
+      <p class="mt-6 text-lg text-gray-800 max-w-xl mx-auto md:mx-0">
+        The Federation of Public Transport Sector (FPTS) is a national umbrella body representing public transport operators, advocating for policy reforms, safety standards, and sector-wide capacity building.
+      </p>
+
+      <a href="/about.html"
+         class="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-[#FC2D05] text-white font-semibold rounded-lg shadow-lg hover:bg-[#e62803] transition">
+        Learn More About FPTS
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Right Image + Highlights -->
+    <div class="relative md:flex-1 w-full max-w-md mx-auto">
+      <div class="absolute -top-6 -left-6 w-full h-full border-2 border-[#FC2D05] rounded-2xl"></div>
+
+      <div class="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <img src="/Assets/mbadi  copy.jpeg"
+             alt="Public transport policy and safety in Kenya"
+             class="w-full h-64 md:h-80 object-cover brightness-105">
+
+        <div class="p-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-[#FC2D05]"></span>
+            <p class="font-semibold text-gray-800">Policy & Regulatory Advocacy</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-[#1D4ED8]"></span>
+            <p class="font-semibold text-gray-800">Road Safety & Standards</p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-3 h-3 rounded-full bg-[#FC2D05]"></span>
+            <p class="font-semibold text-gray-800">Capacity Building & Representation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ================= FUTURE OF PUBLIC TRANSPORT SECTION ================= -->
+<section class="relative py-14 bg-gradient-to-r from-white via-[#60A5FA]/20 to-[#FC2D05]/20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center space-y-12">
+
+    <!-- Headline -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl font-extrabold text-primary leading-tight">
+      The Future of Public Transport: <span class="text-[#FC2D05]"> <br>Safe, Smart & Cashless</span>
+    </h2>
+    <p class="text-lg md:text-xl text-gray-700 max-w-3xl">
+      FPTS is shaping a modern, efficient, and passenger-focused public transport system.  
+      Imagine journeys that are seamless, safe, and powered by technology — from cashless ticketing to data-driven operations and sustainable fleets.
+    </p>
+
+    <!-- Hero Image -->
+    <div class="w-full lg:w-3/4">
+      <img src="Assets/roambus.jpg" 
+           alt="Futuristic public transport" 
+           class="rounded-3xl shadow-2xl w-full mx-auto">
+    </div>
+
+    <!-- Features / Highlights -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12 text-center">
+      <div class="p-6 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-lg font-bold text-[#1D4ED8] mb-2">Cashless Ticketing</h3>
+        <p class="text-gray-700 text-sm">Seamless mobile payments, QR boarding, integrated fares — fast, transparent, convenient.</p>
+      </div>
+      <div class="p-6 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-lg font-bold text-[#FC2D05] mb-2">Smart & Sustainable Fleet</h3>
+        <p class="text-gray-700 text-sm">Electric and hybrid buses that are efficient, low-emission, and comfortable.</p>
+      </div>
+      <div class="p-6 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-lg font-bold text-[#1D4ED8] mb-2">Data-Driven Operations</h3>
+        <p class="text-gray-700 text-sm">Real-time passenger and route data to optimize schedules and reduce congestion.</p>
+      </div>
+      <div class="p-6 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-lg font-bold text-[#FC2D05] mb-2">Enhanced Passenger Experience</h3>
+        <p class="text-gray-700 text-sm">Reliable, comfortable, and transparent transport with safety tracking and real-time updates.</p>
+      </div>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="/about.html" class="px-10 py-4 bg-[#1D4ED8] text-white font-bold rounded-xl shadow-lg hover:bg-blue-700 transition">
+        Explore Our Vision
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= CENTER-ALIGNED DATA-DRIVEN ROAD SAFETY & RESOURCES SECTION ================= -->
+<section class="py-12 bg-gradient-to-r from-white via-[#60A5FA]/30 to-[#FC2D05]/20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col items-center space-y-16">
+
+    <!-- Headline & Subtext -->
+    <div class="text-center space-y-6 max-w-4xl">
+      <h2 class="text-3xl md:text-4xl xl:text-5xl font-bold text-primary leading-tight">
+        Data-Driven Road Safety: <span class="text-[#FC2D05]">The Facts Behind Kenya's Public Transport Crisis</span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-700">
+        The Federation of Public Transport Sector (FPTS) advocates for evidence-based reforms using official data from the National Transport and Safety Authority (NTSA). 
+        In 2025, Kenya recorded <strong>4,458 road fatalities</strong> (up 3.4% from 4,311 in 2024), with public transport vehicles (matatus & buses) heavily involved in crashes affecting passengers and pedestrians. 
+        Reliable data is key to building safer, more efficient systems—explore the numbers and download key resources below.
+      </p>
+    </div>
+
+    <!-- Key Statistics Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="p-8 bg-white rounded-2xl shadow-xl">
+        <p class="text-4xl md:text-5xl font-extrabold text-[#FC2D05]">4,458</p>
+        <p class="text-xl font-semibold text-gray-800 mt-2">Road Fatalities in 2025</p>
+        <p class="text-gray-600 text-sm mt-1">(NTSA Full-Year Data)</p>
+      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-xl">
+        <p class="text-4xl md:text-5xl font-extrabold text-[#1D4ED8]">1,685</p>
+        <p class="text-xl font-semibold text-gray-800 mt-2">Pedestrian Deaths</p>
+        <p class="text-gray-600 text-sm mt-1">(Highest victim category)</p>
+      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-xl">
+        <p class="text-4xl md:text-5xl font-extrabold text-[#FC2D05]">100,000</p>
+        <p class="text-xl font-semibold text-gray-800 mt-2">Active Matatus Nationwide</p>
+        <p class="text-gray-600 text-sm mt-1">(Core of public transport)</p>
+      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-xl">
+        <p class="text-4xl md:text-5xl font-extrabold text-[#1D4ED8]">Sh450B</p>
+        <p class="text-xl font-semibold text-gray-800 mt-2">Annual Economic Cost</p>
+        <p class="text-gray-600 text-sm mt-1">(From road crashes)</p>
+      </div>
+    </div>
+
+    <!-- Resource Highlights -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-[#1D4ED8] mb-2">NTSA Road Safety Reports</h3>
+        <p class="text-gray-700">Official crash statistics, trends, and analysis to inform sector reforms.</p>
+        <a href="https://www.ntsa.go.ke" target="_blank" class="text-[#1D4ED8] underline mt-2 inline-block">View NTSA Data →</a>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-[#FC2D05] mb-2">National Road Safety Action Plan 2024–2028</h3>
+        <p class="text-gray-700">Government strategy aiming for 50% fatality reduction by 2030.</p>
+        <a href="https://www.transport.go.ke" target="_blank" class="text-[#FC2D05] underline mt-2 inline-block">Download Plan →</a>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-[#1D4ED8] mb-2">Matatu Route Data (Open GTFS)</h3>
+        <p class="text-gray-700">Crowdsourced Nairobi matatu routes for better planning and apps.</p>
+        <a href="https://open.africa/dataset/gtfs-data-on-public-transport-matatu-routes" target="_blank" class="text-[#1D4ED8] underline mt-2 inline-block">Access Open Data →</a>
+      </div>
+    </div>
+
+    <!-- Strong CTA -->
+    <div class="mt-16 text-center space-y-4">
+      <p class="text-xl text-gray-800">Join FPTS in using data to modernize public transport and save lives.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/media/index.html" class="inline-block px-8 py-4 bg-[#FC2D05] text-white font-bold text-lg rounded-lg shadow-lg hover:bg-red-700 transition">
+          Explore All Resources & Downloads
+        </a>
+        <a href="/contact/index.html" class="inline-block px-8 py-4 bg-[#1D4ED8] text-white font-bold text-lg rounded-lg shadow-lg hover:bg-blue-700 transition">
+          Partner With Us
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ================= NEWSLETTER / LEAD CAPTURE SECTION (Aligned & Polished) ================= -->
+<section class="relative py-18 md:py-16 bg-gradient-to-br from-[#1D4ED8]/100 via-[#60A5FA]/50 to-[#FC2D05]/90 overflow-hidden">
+  <!-- Background Shapes -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-0 left-0 w-full h-full bg-black/20"></div>
+    <div class="absolute top-10 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-10 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-5xl mx-auto px-6 text-center space-y-12">
+
+    <!-- Headline -->
+    <h2 class="text-4xl md:text-5xl xl:text-6xl font-extrabold text-white leading-tight">
+      Stay Ahead on Public Transport Reforms
+    </h2>
+
+    <!-- Subtext -->
+    <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+      Subscribe for exclusive updates on road safety data, electric fleet rollouts, policy changes, and FPTS initiatives.
+    </p>
+
+    <!-- Thematic Visuals -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto justify-center">
+      <grok-card data-id="dc264d" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="4d5d83" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="7b51b2" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="f80477" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="92f836" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="44655f" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="236436" data-type="image_card" data-arg-size="LARGE"></grok-card>
+      <grok-card data-id="ceadfb" data-type="image_card" data-arg-size="LARGE"></grok-card>
+    </div>
+
+    <!-- Benefits List -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-white/90 text-center md:text-left">
+      <div class="space-y-2">
+        <p class="font-semibold">Monthly NTSA Insights</p>
+        <p class="text-sm">Latest crash statistics & trends</p>
+      </div>
+      <div class="space-y-2">
+        <p class="font-semibold">Modernization Updates</p>
+        <p class="text-sm">Electric buses, cashless systems progress</p>
+      </div>
+      <div class="space-y-2">
+        <p class="font-semibold">Policy & Advocacy News</p>
+        <p class="text-sm">FPTS recommendations & government actions</p>
+      </div>
+    </div>
+
+    <!-- Enhanced Form -->
+    <form class="max-w-2xl mx-auto space-y-6" action="https://formsubmit.co/your-email@fpts.co.ke" method="POST">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" name="name" placeholder="Your Name" required
+               class="px-6 py-4 rounded-full bg-white/20 backdrop-blur-md text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-4 focus:ring-white/50 transition">
+        <input type="email" name="email" placeholder="your@email.com" required
+               class="px-6 py-4 rounded-full bg-white/20 backdrop-blur-md text-white placeholder-white/70 border border-white/30 focus:outline-none focus:ring-4 focus:ring-white/50 transition">
+      </div>
+      <button type="submit"
+              class="px-12 py-5 bg-white text-[#1D4ED8] font-bold text-lg rounded-full shadow-2xl hover:bg-gray-100 transition transform hover:scale-105">
+        Subscribe Now
+      </button>
+
+      <!-- Hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://fpts.co.ke/thank-you">
+    </form>
+
+    <!-- Trust Assurance -->
+    <p class="text-white/80 text-sm max-w-xl mx-auto">
+      We respect your privacy — unsubscribe anytime. No spam, only valuable updates on safer roads and modern transport.
+    </p>
+
+    <!-- Success Message -->
+    <div id="successMsg" class="hidden mt-8 p-8 bg-white/20 rounded-3xl text-white">
+      <p class="text-2xl font-bold">Thank you!</p>
+      <p>You've successfully subscribed. Check your inbox for the latest updates.</p>
+    </div>
+  </div>
+
+  <!-- Simple Success Script -->
+  <script>
+    document.querySelector('form').addEventListener('submit', function() {
+      setTimeout(() => {
+        document.getElementById('successMsg').classList.remove('hidden');
+        this.classList.add('hidden');
+      }, 500);
+    });
+  </script>
+</section>
+
+
+
+<!-- ================= FOOTER – CLEAN, ELEGANT WITH SMALL-TO-MEDIUM FONT SIZES ================= -->
+<footer class="relative text-white overflow-hidden mt-16">
+  <!-- Sophisticated Dark Gradient Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-primary/80 to-slate-950"></div>
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-16 lg:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14">
+
+      <!-- Logo Section – Clean & Visible -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-5 mb-8">
+          <!-- Logo – Prominent but Balanced -->
+          <div class="relative group">
+            <img src="/Assets/AiFPTSlogo.png"
+                 alt="FPTS Logo"
+                 class="h-20 lg:h-24 object-contain drop-shadow-xl transition-all duration-500 group-hover:scale-105" />
+            
+            <!-- Subtle Glow -->
+            <div class="absolute -inset-6 bg-gradient-to-r from-primary/30 to-secondary/20 rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-700 -z-10"></div>
+          </div>
+
+          <div>
+            <p class="text-xl lg:text-2xl font-bold">FPTS</p>
+            <p class="text-sm lg:text-base text-white/80 font-medium">
+              Federation of Public Transport Sector
+            </p>
+          </div>
+        </div>
+
+        <!-- Tagline – Medium Size -->
+        <p class="text-base lg:text-lg font-semibold leading-relaxed mb-6 text-white/90">
+          One Voice • One Route • One Future
+        </p>
+        <p class="text-white/80 leading-relaxed text-sm lg:text-base mb-10">
+          Advancing excellence in public transport sector.
+        </p>
+
+        <!-- Social Icons – Medium Size -->
+        <div class="flex space-x-5">
+          <a href="https://x.com/FederationofPT" target="_blank"
+             class="group w-11 h-11 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+            <svg class="w-5 h-5 text-white group-hover:text-primary transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/share/15MLCSAGaRe/" target="_blank"
+             class="group w-11 h-11 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+            <svg class="w-5 h-5 text-white group-hover:text-primary transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/federation-of-public-transport-b97986397/" target="_blank"
+             class="group w-11 h-11 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+            <svg class="w-5 h-5 text-white group-hover:text-primary transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@federationofpublictransp" target="_blank"
+             class="group w-11 h-11 bg-white/10 backdrop-blur-md rounded-xl flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 shadow-md hover:shadow-lg hover:scale-110">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white group-hover:text-primary transition" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-lg lg:text-xl font-bold mb-6 text-white">Quick Links</h4>
+        <ul class="space-y-3 text-white/80 text-sm lg:text-base">
+          <li><a href="/" class="hover:text-secondary transition">Home</a></li>
+          <li><a href="/about.html" class="hover:text-secondary transition">About Us</a></li>
+          <li><a href="/what-we-do/" class="hover:text-secondary transition">What We Do</a></li>
+          <li><a href="/membership/" class="hover:text-secondary transition">Membership</a></li>
+          <li><a href="/media/" class="hover:text-secondary transition">Media Center</a></li>
+          <li><a href="/contact/" class="hover:text-secondary transition">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Get Involved -->
+      <div>
+        <h4 class="text-lg lg:text-xl font-bold mb-6 text-white">Get Involved</h4>
+        <ul class="space-y-3 text-white/80 text-sm lg:text-base">
+          <li><a href="/membership/" class="hover:text-secondary transition">Join as a Member</a></li>
+          <li><a href="/membership/#membership-requirements" class="hover:text-secondary transition">Corporate Partnerships</a></li>
+          <li><a href="/media/#news-updates" class="hover:text-secondary transition">Latest News</a></li>
+          <li><a href="/media/#events" class="hover:text-secondary transition">Upcoming Events</a></li>
+          <li><a href="/media/#downloads" class="hover:text-secondary transition">Downloads</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact + CTA -->
+      <div>
+        <h4 class="text-lg lg:text-xl font-bold mb-6 text-white">Let’s Move Kenya Forward</h4>
+        <p class="text-white/90 mb-8 leading-relaxed text-sm lg:text-base">
+          Join the national movement for safe, efficient, and sustainable public transport.
+        </p>
+
+        <a href="/membership/" 
+           class="inline-block w-full lg:w-auto text-center py-4 px-8 bg-white text-primary font-bold text-base lg:text-lg rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          Join FPTS Today →
+        </a>
+
+        <div class="mt-10 space-y-4 text-white/80 text-sm lg:text-base">
+          <p class="flex items-center gap-3">
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <a href="mailto:info@fpts.co.ke" class="hover:text-secondary transition">info@fpts.co.ke</a>
+          </p>
+          <p class="flex items-center gap-3">
+            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+            <a href="tel:+254790350991" class="hover:text-secondary transition">(+254) 790-350-991</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar – Small & Clean -->
+    <div class="mt-12 pt-8 border-t border-white/20 text-center text-white/70 text-xs lg:text-sm">
+      <p>
+        © 2025 Federation of Public Transport Sector (FPTS) Kenya • All Rights Reserved<br class="sm:hidden">
+        Registered under the Societies Act (Cap 108)<br>
+        Designed with ❤️ by <a href="https://eskah-edge.com" target="_blank" class="font-bold hover:text-secondary transition">Eskah Edge</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
