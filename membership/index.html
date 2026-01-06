@@ -1213,13 +1213,24 @@
     </div>
 
     <!-- Bottom Bar – Small & Clean -->
-    <div class="mt-12 pt-8 border-t border-white/20 text-center text-white/70 text-xs lg:text-sm">
-      <p>
-        © 2025 Federation of Public Transport Sector (FPTS) Kenya • All Rights Reserved<br class="sm:hidden">
-        Registered under the Societies Act (Cap 108)<br>
-        Designed with ❤️ by <a href="https://eskah-edge.com" target="_blank" class="font-bold hover:text-secondary transition">Eskah Edge</a>
-      </p>
-    </div>
+   <!-- Bottom Bar – Small & Clean with Auto-Updating Year -->
+<div class="mt-12 pt-8 border-t border-white/20 text-center text-white/70 text-xs lg:text-sm">
+  <p>
+    © <span id="current-year">2026</span> Federation of Public Transport Sector (FPTS) Kenya • All Rights Reserved<br class="sm:hidden">
+    Registered under the Societies Act (Cap 108)<br>
+    Designed with ❤️ by <a href="https://eskah-edge.com" target="_blank" class="font-bold hover:text-secondary transition">Eskah Edge</a>
+  </p>
+</div>
+
+<!-- Script to Automatically Update the Copyright Year -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  });
+</script>
   </div>
 </footer>
 </body>
