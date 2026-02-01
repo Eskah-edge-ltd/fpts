@@ -97,6 +97,103 @@
     }
   </script>
 
+
+
+<!-- Small Pop-out Rectangle – Top-Right, Persistent until X, with size reduce animation -->
+<div id="fptsPopout" class="fixed top-5 right-5 z-[9999] w-80 sm:w-96 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl border border-red-400/40 overflow-hidden transform scale-110 opacity-0 translate-y-[-20px] transition-all duration-700 ease-out pointer-events-none">
+  <!-- Top urgency accent -->
+  <div class="h-1 bg-gradient-to-r from-red-600 to-orange-500"></div>
+
+  <div class="p-4 relative">
+    <!-- Close button -->
+    <button id="closeFpts" class="absolute top-2 right-3 text-gray-600 hover:text-red-700 text-2xl font-bold transition-colors focus:outline-none" aria-label="Close FPTS update">
+      ×
+    </button>
+
+    <!-- Badge + Date -->
+    <div class="flex items-center justify-between mb-2">
+      <time datetime="2026-02-01" class="text-xs font-medium text-gray-600">Feb 1, 2026</time>
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 text-red-700 text-xs font-bold uppercase tracking-wide shadow-sm animate-pulse">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative rounded-full h-2.5 w-2.5 bg-red-600"></span>
+        </span>
+        FPTS UPDATE
+      </span>
+    </div>
+
+    <!-- Title -->
+    <h4 class="font-bold text-base leading-tight text-gray-900 mb-2">
+      FPTS Calls Off Strike – But Monday Matatu Chaos Possible
+    </h4>
+
+    <!-- Teaser -->
+    <p class="text-gray-700 text-sm leading-relaxed line-clamp-3 mb-3">
+Matatu Strike for Feb 2, 2026 suspended after talks between Boda Boda, PSV operators & security agencies. Ongoing consultations with all transport stakeholders, police & NTSA to resolve issues amicably.    
+    </p>
+
+    <!-- Read More link – scrolls to your section -->
+    <a href="media/index.html#popupTarget" class="text-red-600 font-semibold text-sm hover:text-red-800 transition-colors flex items-center gap-1 group">
+      Read Full Federation Update →
+      <span class="group-hover:translate-x-1 transition-transform">→</span>
+    </a>
+  </div>
+</div>
+
+<!-- JavaScript: Appear top-right, reduce size after show, persistent until X -->
+<script>
+  const popout = document.getElementById('fptsPopout');
+  const closeBtn = document.getElementById('closeFpts');
+
+  function showPopout() {
+    popout.classList.remove('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+    popout.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+
+    // After 800ms: reduce size slightly (settle effect)
+    setTimeout(() => {
+      popout.classList.remove('scale-110');
+      popout.classList.add('scale-100');
+    }, 800);
+  }
+
+  function hidePopout() {
+    popout.classList.remove('opacity-100', 'pointer-events-auto');
+    popout.classList.add('opacity-0', 'translate-y-[-20px]', 'pointer-events-none');
+  }
+
+  // Show after 4 seconds (quick but not instant – good for morning traffic checks)
+  setTimeout(showPopout, 1000);
+
+  // Close only on X click
+  closeBtn.addEventListener('click', hidePopout);
+
+  // Hide when Read More clicked (with delay for scroll)
+  document.querySelector('#fptsPopout a')?.addEventListener('click', () => {
+    setTimeout(hidePopout, 500);
+  });
+
+  // Optional hover enlarge for interaction
+  popout.addEventListener('mouseenter', () => {
+    if (popout.classList.contains('pointer-events-auto')) {
+      popout.classList.remove('scale-100');
+      popout.classList.add('scale-105');
+    }
+  });
+  popout.addEventListener('mouseleave', () => {
+    popout.classList.remove('scale-105');
+    popout.classList.add('scale-100');
+  });
+</script>
+
+<!-- Optional styles (add to your CSS or <style> tag) -->
+<style>
+  #fptsPopout {
+    box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.25);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
   <!-- Custom Styles -->
   <style>
     body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
