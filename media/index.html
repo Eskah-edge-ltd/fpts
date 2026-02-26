@@ -402,61 +402,74 @@
   </section>
   <!-- section 2- news and updates -->
 
-
 <!-- Press Statements Section -->
-  <div class="max-w-4xl mx-auto px-6">
+<div class="max-w-6xl mx-auto px-6 py-12">
 
-    <!-- Section Heading -->
-     <h2 class="text-2xl md:text-3xl font-extrabold  mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-      Press Statements
-    </h2>
+  <!-- Heading -->
+  <h2 class="text-2xl md:text-3xl font-extrabold mb-8
+             bg-gradient-to-r from-primary to-secondary
+             bg-clip-text text-transparent">
+    Press Statements
+  </h2>
 
-    <!-- Single Press Statement Card -->
-    <div class="bg-white rounded-2xl shadow-lg border-l-8 border-secondary hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col md:flex-row gap-6 p-6">
+  <!-- Cards Grid: Left → Right -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <!-- PDF Thumbnail -->
-      <div class="flex-shrink-0 w-full md:w-48">
-        <div class="relative rounded-xl overflow-hidden shadow-md border border-gray-200 bg-gray-50">
-          <img src="/Assets/FPTS IMMEDIATE RELEASE(20012026) (4).png" 
-               alt="Press Statement PDF Preview" 
-               class="w-full h-auto object-cover transition-transform duration-300 hover:scale-[1.02]">
-          <div class="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 hover:opacity-100 transition-opacity">
-            <span class="text-white text-sm font-medium px-3 py-1 bg-black/40 rounded">View PDF</span>
-          </div>
-        </div>
+   <!-- SUPER METRO CARD -->
+<div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl flex flex-col">
+  <!-- PDF preview image -->
+  <img src="/assets/SUPER_METRO_STATEMENT.png"
+       alt="Super Metro Statement Preview"
+       class="w-full h-56 object-cover rounded-t-2xl">
+
+  <div class="p-6 flex flex-col flex-1">
+    <h3 class="text-xl font-bold text-primary mb-2">
+      Super Metro Official Statement
+    </h3>
+    <p class="text-gray-700 text-sm mb-4">
+      Super Metro confirms the incident and states that investigations are ongoing.
+    </p>
+    <p class="text-gray-400 text-xs mb-4">
+      February 2026
+    </p>
+
+    <!-- Shareable PDF link -->
+    <a href="https://www.fpts.co.ke/assets/SUPER_METRO_STATEMENT.pdf" target="_blank"
+       class="mt-auto inline-flex items-center justify-center px-5 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition">
+      View Statement
+    </a>
+  </div>
+</div>
+
+    <!-- ================= FPTS CARD ================= -->
+    <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl flex flex-col">
+      <!-- PDF preview image -->
+      <img src="/Assets/FPTS IMMEDIATE RELEASE(20012026) (4).png"
+           alt="FPTS Statement Preview"
+           class="w-full h-56 object-cover rounded-t-2xl">
+
+      <div class="p-6 flex flex-col flex-1">
+        <h3 class="text-xl font-bold text-primary mb-2">
+          NTSA Suspends 4 PSV Operators
+        </h3>
+        <p class="text-gray-700 text-sm mb-4">
+          FPTS acknowledges NTSA action and emphasizes road safety.
+        </p>
+        <p class="text-gray-400 text-xs mb-4">
+          January 20, 2026
+        </p>
+
+        <!-- Shareable PDF link -->
+        <a href="https://www.fpts.co.ke/Assets/FPTS IMMEDIATE RELEASE(20012026) (4).png" target="_blank"
+           class="mt-auto inline-flex items-center justify-center px-5 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition">
+          View Statement
+        </a>
       </div>
-
-      <!-- Statement Text -->
-      <div class="flex-1 flex flex-col justify-between text-center md:text-left">
-        <div>
-          <h3 class="text-2xl md:text-3xl font-bold text-primary mb-3">
-            NTSA Suspends 4 PSV Operators
-          </h3>
-          <p class="text-gray-700 mb-2">
-            FPTS acknowledges NTSA’s action following breaches of road safety regulations. The Federation reiterates that road safety is non-negotiable, and operators or drivers endangering lives must be held accountable.
-          </p>
-          <p class="text-gray-400 text-sm mb-4">
-            January,20 2026
-          </p>
-        </div>
-
-        <!-- Download Button -->
-        <div class="mt-auto text-center md:text-left">
-          <a href="/Assets/FPTS IMMEDIATE RELEASE(20012026) (5).pdf" target="_blank"
-             class="inline-flex items-center gap-2 px-6 py-3.5 bg-primary text-white font-medium text-base rounded-lg 
-                    hover:bg-secondary hover:shadow-lg transition duration-200 shadow-md">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Download PDF
-          </a>
-        </div>
-      </div>
-
     </div>
 
   </div>
+</div>
+<!-- End Press Statements Section -->
 
 
       <!-- News & Updates Section with Read More / Less -->
